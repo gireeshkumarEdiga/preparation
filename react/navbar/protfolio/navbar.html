@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        nav {
+            background-color: #21273f;
+            /* background-color: black; */
+            display: flex;
+            flex-direction: row;
+            padding: 2%;
+            width: 96%;
+        }
+
+        nav > logo {
+            color: white;
+            font-size: 30px;
+            width: 50%;
+            font-weight: bold;
+            line-height: 0 100px;
+            /* border: 1px solid black; */
+        }
+
+        nav> #details {
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+            margin: 0% 0% 0% 10%;
+            /* border: 1px solid red; */
+        }
+        nav > div > div  {
+            padding: 0% 5%;
+            font-size: 20px;
+        }
+        #details > div > a{
+            color: white;
+            text-decoration: none;
+        }
+        /* #details > a:hover, a:active {
+            background: none;
+            color: #0082e6;
+        } */
+        a.active, a:hover {
+            background: black;
+            transition: .20s;
+        }
+
+        @media (max-width: 850px){
+            nav {
+                background-color: #21273f;
+                /* background-color: black; */
+                display: flex;
+                flex-direction: column;
+                padding: 2%;
+                width: 100%;
+            }
+
+            nav > logo {
+                font-size: 30px;
+                padding-left: 50px;
+            }
+
+            nav > #details {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+            a.active, a:hover {
+                background: black;
+                transition: .20s;
+            }
+
+            #details > div {
+                padding : 5%;
+                display: block;
+            }
+
+            #details > div > a {
+                font-size: 20px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <logo>Gireeshkumar Ediga</logo>
+        <div id="details">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">About</a></div>
+            <div><a href="#">Skills</a></div>
+            <div><a href="#">Projects</a></div>
+            <div><a href="#">Contact</a></div>
+        </div>
+    </nav>
+
+</body>
+</html>

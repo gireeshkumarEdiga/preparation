@@ -1,0 +1,12 @@
+hooks
+
+
+1. useState
+2. useReducer
+3.useRef
+4.useEffect
+5. useLayoutEffect
+6.useContext
+7. useImporitiveHandle
+8.Use memo
+9. useCall back
